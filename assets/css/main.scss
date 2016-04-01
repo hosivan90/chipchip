@@ -1,0 +1,51 @@
+// Base stuff
+//======================================================================
+@import "base/reset";
+@import "base/typography";
+
+// Sass utilities
+//======================================================================
+@import "helpers/variables";
+
+@import "helpers/functions";
+
+@import "helpers/mixins";
+
+@import "helpers/helpers";
+
+// Vendors and external stylesheets
+//======================================================================
+@import "vendors/bootstrap.min";
+
+@import "vendors/font-awesome.min";
+
+@import "vendors/animate.min";
+
+@import "vendors/bootstrap-switch.min";
+
+@import "vendors/checkbox3.min";
+
+@import "vendors/jquery.dataTables.min";
+
+@import "vendors/dataTables.bootstrap";
+
+@import "vendors/select2.min";
+
+@import "vendors/flat-admin-v2";
+
+@import "vendors/nprogress";
+
+
+// Themes stylesheets
+//======================================================================
+
+@import "themes/flat-blue.scss";
+
+//@import "themes/flat-green.scss";
+
+// Layout related stylesheets
+//======================================================================
+
+// Page-specific stylesheets
+//======================================================================
+

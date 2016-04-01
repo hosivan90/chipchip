@@ -1,0 +1,230 @@
+<!doctype html>
+<head>
+	<meta charset="utf-8">
+
+    <title>Flat Admin V.2 - Free Bootstrap Admin Templates</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Fonts -->
+
+    <style>
+        /* cyrillic-ext */
+        @font-face {
+            font-family: 'Roboto Condensed';
+            font-style: normal;
+            font-weight: 300;
+            src: local('Roboto Condensed Light'), local('RobotoCondensed-Light'), url(assets/fonts/roboto/b9QBgL0iMZfDSpmcXcE8nFVSrcc0PghHf9qMZsyNJkz2Ot9t5h1GRSTIE78Whtoh.woff2) format('woff2');
+            unicode-range: U+0460-052F, U+20B4, U+2DE0-2DFF, U+A640-A69F;
+        }
+        /* cyrillic */
+        @font-face {
+            font-family: 'Roboto Condensed';
+            font-style: normal;
+            font-weight: 300;
+            src: local('Roboto Condensed Light'), local('RobotoCondensed-Light'), url(assets/fonts/roboto/b9QBgL0iMZfDSpmcXcE8nPhvOq3OeDcncmG_JUglX9j2Ot9t5h1GRSTIE78Whtoh.woff2) format('woff2');
+            unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+        }
+        /* greek-ext */
+        @font-face {
+            font-family: 'Roboto Condensed';
+            font-style: normal;
+            font-weight: 300;
+            src: local('Roboto Condensed Light'), local('RobotoCondensed-Light'), url(assets/fonts/roboto/b9QBgL0iMZfDSpmcXcE8nNYL0wkDYJdCinibQo0odb32Ot9t5h1GRSTIE78Whtoh.woff2) format('woff2');
+            unicode-range: U+1F00-1FFF;
+        }
+        /* greek */
+        @font-face {
+            font-family: 'Roboto Condensed';
+            font-style: normal;
+            font-weight: 300;
+            src: local('Roboto Condensed Light'), local('RobotoCondensed-Light'), url(assets/fonts/roboto/b9QBgL0iMZfDSpmcXcE8nAXH_4GUKbrZpEK3n6JMwkL2Ot9t5h1GRSTIE78Whtoh.woff2) format('woff2');
+            unicode-range: U+0370-03FF;
+        }
+        /* vietnamese */
+        @font-face {
+            font-family: 'Roboto Condensed';
+            font-style: normal;
+            font-weight: 300;
+            src: local('Roboto Condensed Light'), local('RobotoCondensed-Light'), url(assets/fonts/roboto/b9QBgL0iMZfDSpmcXcE8nKB_H2MGEFa8U8i2MA2qjRr2Ot9t5h1GRSTIE78Whtoh.woff2) format('woff2');
+            unicode-range: U+0102-0103, U+1EA0-1EF1, U+20AB;
+        }
+        /* latin-ext */
+        @font-face {
+            font-family: 'Roboto Condensed';
+            font-style: normal;
+            font-weight: 300;
+            src: local('Roboto Condensed Light'), local('RobotoCondensed-Light'), url(assets/fonts/roboto/b9QBgL0iMZfDSpmcXcE8nEkGkHRU10pzBW9xZ23ZxGr2Ot9t5h1GRSTIE78Whtoh.woff2) format('woff2');
+            unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+        }
+        /* latin */
+        @font-face {
+            font-family: 'Roboto Condensed';
+            font-style: normal;
+            font-weight: 300;
+            src: local('Roboto Condensed Light'), local('RobotoCondensed-Light'), url(assets/fonts/roboto/b9QBgL0iMZfDSpmcXcE8nCqOJfobX9lrC1wFVe9k15E.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+        }
+        /* cyrillic-ext */
+        @font-face {
+            font-family: 'Roboto Condensed';
+            font-style: normal;
+            font-weight: 400;
+            src: local('Roboto Condensed'), local('RobotoCondensed-Regular'), url(assets/fonts/roboto/Zd2E9abXLFGSr9G3YK2MsIPxuqWfQuZGbz5Rz4Zu1gk.woff2) format('woff2');
+            unicode-range: U+0460-052F, U+20B4, U+2DE0-2DFF, U+A640-A69F;
+        }
+        /* cyrillic */
+        @font-face {
+            font-family: 'Roboto Condensed';
+            font-style: normal;
+            font-weight: 400;
+            src: local('Roboto Condensed'), local('RobotoCondensed-Regular'), url(assets/fonts/roboto/Zd2E9abXLFGSr9G3YK2MsENRpQQ4njX3CLaCqI4awdk.woff2) format('woff2');
+            unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+        }
+        /* greek-ext */
+        @font-face {
+            font-family: 'Roboto Condensed';
+            font-style: normal;
+            font-weight: 400;
+            src: local('Roboto Condensed'), local('RobotoCondensed-Regular'), url(assets/fonts/roboto/Zd2E9abXLFGSr9G3YK2MsET2KMEyTWEzJqg9U8VS8XM.woff2) format('woff2');
+            unicode-range: U+1F00-1FFF;
+        }
+        /* greek */
+        @font-face {
+            font-family: 'Roboto Condensed';
+            font-style: normal;
+            font-weight: 400;
+            src: local('Roboto Condensed'), local('RobotoCondensed-Regular'), url(assets/fonts/roboto/Zd2E9abXLFGSr9G3YK2MsMH5J2QbmuFthYTFOnnSRco.woff2) format('woff2');
+            unicode-range: U+0370-03FF;
+        }
+        /* vietnamese */
+        @font-face {
+            font-family: 'Roboto Condensed';
+            font-style: normal;
+            font-weight: 400;
+            src: local('Roboto Condensed'), local('RobotoCondensed-Regular'), url(assets/fonts/roboto/Zd2E9abXLFGSr9G3YK2MsDcCYxVKuOcslAgPRMZ8RJE.woff2) format('woff2');
+            unicode-range: U+0102-0103, U+1EA0-1EF1, U+20AB;
+        }
+        /* latin-ext */
+        @font-face {
+            font-family: 'Roboto Condensed';
+            font-style: normal;
+            font-weight: 400;
+            src: local('Roboto Condensed'), local('RobotoCondensed-Regular'), url(assets/fonts/roboto/Zd2E9abXLFGSr9G3YK2MsNKDSU5nPdoBdru70FiVyb0.woff2) format('woff2');
+            unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+        }
+        /* latin */
+        @font-face {
+            font-family: 'Roboto Condensed';
+            font-style: normal;
+            font-weight: 400;
+            src: local('Roboto Condensed'), local('RobotoCondensed-Regular'), url(assets/fonts/roboto/Zd2E9abXLFGSr9G3YK2MsH4vxAoi6d67T_UKWi0EoHQ.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+        }
+    </style>
+
+
+    <style>
+        /* latin-ext */
+        @font-face {
+            font-family: 'Lato';
+            font-style: normal;
+            font-weight: 300;
+            src: local('Lato Light'), local('Lato-Light'), url(assets/fonts/lato/IY9HZVvI1cMoAHxvl0w9LVKPGs1ZzpMvnHX-7fPOuAc.woff2) format('woff2');
+            unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+        }
+        /* latin */
+        @font-face {
+            font-family: 'Lato';
+            font-style: normal;
+            font-weight: 300;
+            src: local('Lato Light'), local('Lato-Light'), url(assets/fonts/lato/22JRxvfANxSmnAhzbFH8PgLUuEpTyoUstqEm5AMlJo4.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+        }
+        /* latin-ext */
+        @font-face {
+            font-family: 'Lato';
+            font-style: normal;
+            font-weight: 400;
+            src: local('Lato Regular'), local('Lato-Regular'), url(assets/fonts/lato/8qcEw_nrk_5HEcCpYdJu8BTbgVql8nDJpwnrE27mub0.woff2) format('woff2');
+            unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+        }
+        /* latin */
+        @font-face {
+            font-family: 'Lato';
+            font-style: normal;
+            font-weight: 400;
+            src: local('Lato Regular'), local('Lato-Regular'), url(assets/fonts/lato/MDadn8DQ_3oT6kvnUq_2r_esZW2xOQ-xsNqO47m55DA.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+        }
+        /* latin-ext */
+        @font-face {
+            font-family: 'Lato';
+            font-style: normal;
+            font-weight: 700;
+            src: local('Lato Bold'), local('Lato-Bold'), url(assets/fonts/lato/rZPI2gHXi8zxUjnybc2ZQFKPGs1ZzpMvnHX-7fPOuAc.woff2) format('woff2');
+            unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+        }
+        /* latin */
+        @font-face {
+            font-family: 'Lato';
+            font-style: normal;
+            font-weight: 700;
+            src: local('Lato Bold'), local('Lato-Bold'), url(assets/fonts/lato/MgNNr5y1C_tIEuLEmicLmwLUuEpTyoUstqEm5AMlJo4.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+        }
+        /* latin-ext */
+        @font-face {
+            font-family: 'Lato';
+            font-style: normal;
+            font-weight: 900;
+            src: local('Lato Black'), local('Lato-Black'), url(assets/fonts/lato/t85RP2zhSdDjt5PhsT_SnlKPGs1ZzpMvnHX-7fPOuAc.woff2) format('woff2');
+            unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+        }
+        /* latin */
+        @font-face {
+            font-family: 'Lato';
+            font-style: normal;
+            font-weight: 900;
+            src: local('Lato Black'), local('Lato-Black'), url(assets/fonts/lato/lEjOv129Q3iN1tuqWOeRBgLUuEpTyoUstqEm5AMlJo4.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+        }
+    </style>
+
+    <!-- CSS Libs -->
+    <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+
+	<script data-main="assets/js/main" src="assets/js/libs/require/require.js"></script>
+
+    <script>
+        var version = (new Date()).getTime();
+        if(typeof version !== "undefined") {
+            require.config({
+                urlArgs: "v=" + version
+            });
+        }
+    </script>
+</head>
+
+<body class="flat-blue">
+    <div class="app-container">
+        <div class="row content-container">
+            <!-- begin header -->
+            <nav id="_header-view" class="navbar navbar-default navbar-fixed-top navbar-top"></nav>
+            <!-- end header -->
+
+            <!-- begin sidebar -->
+            <div id="_sidebar-view" class="side-menu sidebar-inverse"></div>
+            <!-- end sidebar -->
+
+            <!-- begin content -->
+            <div class="container-fluid">
+                <div class="side-body padding-top" id="_content-view"></div>
+            </div>
+            <!-- end content -->
+        </div>
+        <!-- begin footer -->
+        <footer id="_footer-view" class="app-footer"></footer>
+        <!-- end footer -->
+    </div>
+</body>
+
+</html>
